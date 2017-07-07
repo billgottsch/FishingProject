@@ -1,14 +1,16 @@
 import { AppRegistry, StyleSheet, Text, View, Image } from 'react-native';
-
+import Bellefair from '../assets/fonts/Bellefair-Regular';
 
 const styles = StyleSheet.create({
- customFont: {
-   fontFamily: 'Bellefair-Regular',
- },
 
   tabBar: {
     backgroundColor:'#e5e5e5',
   },
+
+  oneTab: {
+    fontSize: 15,
+  },
+
   backgroundPicture: {
     flex: 1,
     // remove width and height to override fixed static size
@@ -21,8 +23,9 @@ const styles = StyleSheet.create({
   },
 
   welcomeContent: {
-    // fontFamily: 'Bellefair-Regular',
-    fontSize:50,
+    fontFamily:'Bellefair-Regular',
+    fontSize:40,
+    color:'#111',
     fontWeight:'bold',
     textAlign:'center',
     backgroundColor:0,

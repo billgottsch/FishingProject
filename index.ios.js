@@ -32,12 +32,12 @@ class FishingProject extends Component {
 
         <View>
           <Tabs selected={this.state.page} style={styles.tabBar}
-                selectedStyle={{color:'#3050ba'}} onSelect={el=>this.setState({page:el.props.name})}>
-              <Text name="first" selectedIconStyle={{borderTopWidth:2,borderTopColor:'#1560fb'}}>First</Text>
-              <Text name="second" selectedIconStyle={{borderTopWidth:2,borderTopColor:'#1560fb'}}>Second</Text>
-              <Text name="third" selectedIconStyle={{borderTopWidth:2,borderTopColor:'#1560fb'}}>Third</Text>
-              <Text name="fourth" selectedIconStyle={{borderTopWidth:2,borderTopColor:'#1560fb'}}>Fourth</Text>
-              <Text name="fifth" selectedIconStyle={{borderTopWidth:2,borderTopColor:'#1560fb'}}>Fifth</Text>
+                selectedStyle={{color:'#66bbbb', fontWeight:'bold',}} onSelect={el=>this.setState({page:el.props.name})}>
+              <Text name="New Entry" style={styles.oneTab} selectedIconStyle={{borderTopWidth:4,borderTopColor:'#66bbbb'}}>New Entry</Text>
+              <Text name="Lake List" style={styles.oneTab} selectedIconStyle={{borderTopWidth:4,borderTopColor:'#66bbbb'}}>Lake List</Text>
+              <Text name="Search" style={styles.oneTab} selectedIconStyle={{borderTopWidth:4,borderTopColor:'#66bbbb'}}>Share!</Text>
+              {/* <Text name="fourth" selectedIconStyle={{borderTopWidth:2,borderTopColor:'#66bbbb'}}>Fourth</Text>
+              <Text name="fifth" selectedIconStyle={{borderTopWidth:2,borderTopColor:'#66bbbb'}}>Fifth</Text> */}
           </Tabs>
         </View>
 

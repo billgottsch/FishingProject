@@ -4,7 +4,11 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "rnpm": {
+       "assets": ["assets/fonts/Bellefair-Regular.ttf"]
+  }
+
   },
   "dependencies": {
     "react": "16.0.0-alpha.6",
@@ -20,7 +24,4 @@
   "jest": {
     "preset": "react-native"
   },
-  "rnpm": {
-     "assets": ["assets/fonts/Bellefair-Regular.ttf"]
-}
 }
